@@ -1,0 +1,32 @@
+
+{%extends 'user.html' %}
+
+{%block title%}
+user register
+{%endblock title%}
+
+{%block body%}
+<style>
+    .login-formReg h1{
+      align-items: center;
+      justify-self: center;
+      color: goldenrod;
+    }
+</style>
+
+<form  method="post" class="login-formReg">
+    <h1>Register</h1>
+    {%csrf_token%}
+    {{EUFO.as_div}}
+    {{EUIFO.as_div}}
+    <div class="input-field">
+        <input type="submit" value="REGISTER">
+    </div>
+</form>
+<script>
+    const div=document.getElementsByClassName("login-form").innerHTML
+    
+    console.log(div);
+    
+</script>
+{%endblock body%}

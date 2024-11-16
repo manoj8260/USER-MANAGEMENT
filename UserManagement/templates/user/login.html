@@ -1,0 +1,30 @@
+{%extends 'user.html' %}
+
+{%block title%}
+user login
+{%endblock title%}
+
+{%block body%}
+
+<div class="login-main">
+    <form method="post" id="login-form" class="login-form">
+        <h1>Login</h1>
+        {%csrf_token%}
+        <div class="input-field un">
+            <label for="mobile">Mobile No.</label>
+            <input type="text" placeholder="Mobile number" name="mobile" id="mobile">
+        </div>
+        <div class="input-field">
+            <label for="pw">Password</label>
+            <input type="password" placeholder="Password" name="pw" id="pw">
+        </div>
+        <div class="input-field">
+            <a href="{%url 'forget_password' %}">Forgot Password</a>
+            <a href="{%url 'user_register'%}">Don't have account Create Now</a>
+        </div>
+        <div class="input-field">
+            <input type="submit" value="login">
+        </div>
+    </form>
+</div>
+{%endblock body%}

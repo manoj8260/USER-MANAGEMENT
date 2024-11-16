@@ -1,0 +1,79 @@
+
+    .input-field {
+        margin-bottom: 20px;
+    }
+
+    .input-field label,
+    .login-formReg div label{
+        display: block;
+        margin-bottom: 10px;
+        color: #000;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .input-field input,
+    .login-formReg div input{
+        display: block;
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+        line-height: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background: #fff;
+        padding: 0 15px;
+        color: #000;
+        outline: none;
+    }
+    .input-field input:focus,
+    .login-formReg  div input:focus{
+        border-color: #d58025;
+    }
+
+    .input-field input[type="submit"] {
+        background: #d58025;
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 18px;
+        height: auto;
+        font-weight: 500;
+        height: 50px;
+    }
+
+    form.login-form,
+    form.login-formReg {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 15px;
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        border-radius: 8px;
+    }
+    form.login-formReg {
+        max-width: 600px;
+      
+    }
+
+    .login-main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    form.login-form h1 {
+        text-align: center;
+        color: #d58025;
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+
+    .input-field a {
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        color: #d58025;
+        margin-top: 10px;
+    }
